@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cửa hàng bán máy tính, laptop và phụ kiện công nghệ chính hãng giá tốt nhất.">
+  <title>TechStore - Cửa Hàng Máy Tính & Phụ Kiện Công Nghệ</title>
+  
+  <!-- Nhúng Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- KHỐI 1: HEADER + MENU -->
+  <header class="header animate__animated animate__fadeInDown">
+    <div class="logo">TechStore</div>
+    <nav class="menu">
+      <a href="#home">Trang chủ</a>
+      <a href="#laptop">Laptop</a>
+      <a href="#phukien">Phụ kiện</a>
+      <a href="#khuyenmai">Khuyến mãi</a>
+      <a href="#dathang">Liên hệ</a>
+    </nav>
+    <button id="nut-doi-mau">DarkMode / LightMode</button>
+  </header>
+
+  <main>
+
+    <!-- KHỐI 2: BANNER -->
+    <section class="banner" id="home">
+      <div class="banner-text">
+        <h1 class="animate__animated animate__bounceIn">TechStore - Siêu Thị Công Nghệ</h1>
+        <p>Bùng nổ chương trình khuyến mãi giảm giá đến 30% cho tất cả Laptop và Phụ kiện tuần này!</p>
+        <a href="#dathang" class="btn animate__animated animate__pulse animate__infinite">Mua ngay</a>
+      </div>
+      <div class="banner-img">
+        <img src="https://via.placeholder.com/320x180" alt="Hình ảnh sản phẩm công nghệ nổi bật TechStore">
+      </div>
+    </section>
+
+    <!-- KHỐI 3: DANH SÁCH NỘI DUNG (6 SẢN PHẨM) -->
+    <section class="dich-vu" id="laptop">
+      <h2>Sản Phẩm Công Nghệ Nổi Bật</h2>
+      <div class="danh-sach-card">
+        
+        <article class="card">
+          <img src="https://via.placeholder.com/250x150" alt="Laptop Gaming ASUS TUF">
+          <h3>Laptop Gaming ASUS TUF</h3>
+          <p><strong>Giá:</strong> 18.990.000đ</p>
+          <p><strong>Cấu hình:</strong> Core i5 / RAM 16GB / SSD 512GB / RTX 3050</p>
+          <button class="btn-gui">Thêm vào giỏ</button>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/250x150" alt="MacBook Air M2">
+          <h3>MacBook Air M2</h3>
+          <p><strong>Giá:</strong> 24.500.000đ</p>
+          <p><strong>Cấu hình:</strong> Apple M2 / RAM 8GB / SSD 256GB / Màn 13.6 inch</p>
+          <button class="btn-gui">Thêm vào giỏ</button>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/250x150" alt="Chuột Không Dây Logitech MX Master 3S">
+          <h3>Chuột Logitech MX Master 3S</h3>
+          <p><strong>Giá:</strong> 2.290.000đ</p>
+          <p><strong>Cấu hình:</strong> Cảm biến 8000 DPI, sạc Type-C, kết nối 3 thiết bị</p>
+          <button class="btn-gui">Thêm vào giỏ</button>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/250x150" alt="Bàn Phím Cơ Akko 3087">
+          <h3>Bàn Phím Cơ Akko 3087</h3>
+          <p><strong>Giá:</strong> 1.350.000đ</p>
+          <p><strong>Cấu hình:</strong> Switch Akko CS, Keycap PBT Double-Shot, dây rời</p>
+          <button class="btn-gui">Thêm vào giỏ</button>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/250x150" alt="Tai Nghe Sony WH-1000XM5">
+          <h3>Tai Nghe Sony WH-1000XM5</h3>
+          <p><strong>Giá:</strong> 7.990.000đ</p>
+          <p><strong>Cấu hình:</strong> Chống ồn chủ động ANC, pin 30 giờ, Bluetooth 5.2</p>
+          <button class="btn-gui">Thêm vào giỏ</button>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/250x150" alt="Màn Hình Dell UltraSharp 27 inch">
+          <h3>Màn Hình Dell UltraSharp 27"</h3>
+          <p><strong>Giá:</strong> 8.890.000đ</p>
+          <p><strong>Cấu hình:</strong> Độ phân giải 2K IPS, 100% sRGB, cổng Type-C 90W</p>
+          <button class="btn-gui">Thêm vào giỏ</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- KHỐI 4: FORM ĐẶT HÀNG (CHUẨN CÁC TRƯỜNG ĐỀ 5) -->
+    <section class="lien-he" id="dathang">
+      <h2>Form Đặt Hàng Thiết Bị</h2>
+      <form>
+        <!-- Họ và tên: input text -->
+        <label for="hoten">Họ và tên:</label>
+        <input type="text" id="hoten" placeholder="Nhập họ và tên" required>
+
+        <!-- Email: input email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Nhập địa chỉ email" required>
+
+        <!-- Điện thoại: input tel -->
+        <label for="sdt">Điện thoại:</label>
+        <input type="tel" id="sdt" placeholder="Nhập số điện thoại" required>
+
+        <!-- Địa chỉ giao hàng: input text -->
+        <label for="diachi">Địa chỉ giao hàng:</label>
+        <input type="text" id="diachi" placeholder="Nhập địa chỉ giao hàng" required>
+
+        <!-- Ngày muốn nhận: input date -->
+        <label for="ngaynhan">Ngày muốn nhận:</label>
+        <input type="date" id="ngaynhan" required>
+
+        <!-- Hình thức thanh toán: radio (Tiền mặt / Chuyển khoản / Trả góp) -->
+        <label>Hình thức thanh toán:</label>
+        <div>
+          <input type="radio" name="thanhtoan" id="tm" checked>
+          <label for="tm" style="display:inline;">Tiền mặt</label> &nbsp;
+          <input type="radio" name="thanhtoan" id="ck">
+          <label for="ck" style="display:inline;">Chuyển khoản</label> &nbsp;
+          <input type="radio" name="thanhtoan" id="tg">
+          <label for="tg" style="display:inline;">Trả góp</label>
+        </div>
+
+        <!-- Sản phẩm đặt mua: select (tối thiểu 4 lựa chọn) -->
+        <label for="sanpham">Sản phẩm đặt mua:</label>
+        <select id="sanpham">
+          <option>Laptop Gaming ASUS TUF</option>
+          <option>MacBook Air M2</option>
+          <option>Chuột Logitech MX Master 3S</option>
+          <option>Bàn Phím Cơ Akko 3087</option>
+          <option>Tai Nghe Sony WH-1000XM5</option>
+          <option>Màn Hình Dell UltraSharp 27"</option>
+        </select>
+
+        <!-- Dịch vụ kèm theo: checkbox (tối thiểu 3 lựa chọn) -->
+        <label>Dịch vụ kèm theo:</label>
+        <div>
+          <input type="checkbox" id="dv1">
+          <label for="dv1" style="display:inline;">Cài đặt phần mềm miễn phí</label><br>
+          <input type="checkbox" id="dv2">
+          <label for="dv2" style="display:inline;">Dán màn hình chống xước</label><br>
+          <input type="checkbox" id="dv3">
+          <label for="dv3" style="display:inline;">Gói bảo hành mở rộng 24 tháng</label>
+        </div>
+
+        <!-- Ghi chú giao hàng: textarea -->
+        <label for="ghichu">Ghi chú giao hàng:</label>
+        <textarea id="ghichu" rows="3" placeholder="Nhập thông tin ghi chú thêm..."></textarea>
+
+        <!-- Nút bấm: Đặt hàng và Nhập lại -->
+        <div style="margin-top: 15px;">
+          <button type="submit" class="btn-gui">Đặt hàng</button>
+          <button type="reset" class="btn-gui" style="background-color: #6c757d;">Nhập lại</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- KHỐI 5: FOOTER -->
+  <footer class="footer">
+    <p><strong>Địa chỉ cửa hàng:</strong> Tân Phú, Đồng Nai | <strong>Hotline:</strong> 0123 456 789</p>
+    <p><strong>Chính sách bảo hành:</strong> Bảo hành chính hãng 12 tháng - 1 đổi 1 trong 30 ngày</p>
+    <p>© 2026 TechStore - Bản quyền thuộc về Đặng Nguyễn Hoàng Kim</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
